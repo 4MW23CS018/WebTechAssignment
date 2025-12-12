@@ -1,0 +1,112 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Entire body area */
+body {
+  background: #e9e9e9;
+  color: #222;
+}
+
+/* Sticky Header */
+header {
+  background: #1e88e5;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid #0d47a1;
+}
+
+/* Navigation Bar */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #1565c0;
+}
+
+/* MAIN CONTENT BOX */
+.main-container {
+  width: 60%;
+  margin: 20px auto;        /* This gives ~20% margin left and right */
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid black;  /* Requested */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 10px;
+  color: #1e88e5;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* Section spacing */
+.section {
+  margin-bottom: 25px;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+}
+
+/* Table (For Bio-data) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #1a1a1a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .main-container {
+  background: #2a2a2a;
+  border: 1px solid #555;
+  box-shadow: none;
+}
+
+body.dark-mode header {
+  background: #333;
+}
+
+body.dark-mode th {
+  background: #333;
+  color: #fff;
+}
